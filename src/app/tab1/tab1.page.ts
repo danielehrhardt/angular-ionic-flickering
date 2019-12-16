@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  tester = [
+    { giphy_id: '3kHBUxaBZSSk4x3j3x' },
+    { giphy_id: '3kHBUxaBZSSk4x3j3x' }
+  ];
 
-  constructor() {}
+  test = 'test';
 
+  trackByFn(index, item) {
+    console.log(index);
+    return index; // or item.id
+  }
 }
